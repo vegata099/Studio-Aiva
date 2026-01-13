@@ -1,0 +1,14 @@
+{
+  "app\\page.tsx -> @/components/Live2DViewer": {
+    "id": "app\\page.tsx -> @/components/Live2DViewer",
+    "files": [
+      "static/chunks/_app-pages-browser_components_Live2DViewer_tsx.js"
+    ]
+  },
+  "components\\Live2DViewer.tsx -> pixi-live2d-display/cubism4": {
+    "id": "components\\Live2DViewer.tsx -> pixi-live2d-display/cubism4",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_pixi-live2d-display_dist_cubism4_es_js.js"
+    ]
+  }
+}
