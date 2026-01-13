@@ -1,197 +1,154 @@
-# AIVA Studio - Live2D Model Viewer & Customization
+<div align="center">
 
-A Next.js 14 application for loading and customizing Live2D Cubism 3/4 models with mouse tracking and preset management.
+<!-- Optional cloud anime gif (public) -->
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWRkZGRkZGM5dGRpNTR6b2x2ZzY4bDV5ZHVwM3M5b3Z6eHd6aXN4biZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3o7btPCcdNniyf0ArS/giphy.gif" width="100%" />
 
-## ✅ WORKING - Cubism 4 Model Successfully Loading!
+<h1>☁️ Studio AIVA</h1>
 
-The Nami Cubism 4 model is now successfully loading using the correct import path.
+<p>
+<b>Transform Models into Intelligent Experiences</b><br/>
+Professional-grade platform for bringing character models to life
+</p>
 
-## 🎯 Features
+<p>
+2D · 3D · Experimental Models<br/>
+Expressions · AI Routing · Real-Time Interaction
+</p>
 
-- **Live2D Cubism 4 Support** - Loads `.model3.json` models (VTube Studio compatible)
-- **Mouse Tracking** - Head and eyes follow cursor movement
-- **Studio Mode** - Customize model appearance with sliders and toggles
-- **Preset System** - Save and load customizations (localStorage)
-- **Debug Panel** - View all available parameters and parts
-- **TypeScript** - Fully typed for better development experience
+---
 
-## 🚀 Quick Start
+<a href="#">
+  <img src="https://img.shields.io/badge/Status-Active-blue?style=for-the-badge" />
+</a>
+<a href="#">
+  <img src="https://img.shields.io/badge/Platform-Web-lightblue?style=for-the-badge" />
+</a>
+<a href="#">
+  <img src="https://img.shields.io/badge/Focus-Models%20×%20AI-white?style=for-the-badge" />
+</a>
 
-```bash
-# Install dependencies
-npm install
+</div>
 
-# Run development server
-npm run dev
-```
+---
 
-Visit http://localhost:3000
+```txt
+┌──────────────────────────────────────────────┐
+│               STUDIO  AIVA                   │
+├──────────────────────────────────────────────┤
+│  Models are no longer static assets.          │
+│                                              │
+│  They idle.                                  │
+│  They react.                                 │
+│  They speak.                                 │
+│  They think.                                 │
+│                                              │
+│  Studio AIVA turns character models into      │
+│  living, interactive AI-powered systems.     │
+└──────────────────────────────────────────────┘
+🌥️ What is Studio AIVA?
 
-## 📁 Project Structure
+Studio AIVA is a professional platform for integrating 2D, 3D, and experimental character models with modern AI systems.
 
-```
-aiva-studio/
-├── app/
-│   ├── page.tsx              # Home page with model viewer
-│   └── studio/page.tsx       # Studio customization page
-├── components/
-│   ├── Live2DViewer.tsx      # Main Live2D rendering component
-│   └── StudioControls.tsx    # Customization UI controls
-├── lib/live2d/
-│   ├── loadCore.ts           # Cubism Core loader utility
-│   └── types.ts              # TypeScript definitions
-└── public/live2d/
-    ├── core/
-    │   └── live2dcubismcore.min.js  # Cubism runtime
-    └── aiva/
-        ├── Nami.model3.json  # Your Live2D model
-        ├── aiva.model3.json  # Copy of Nami model
-        ├── aiva.config.json  # Customization config
-        └── ...               # Model textures and files
-```
+It enables creators and developers to:
 
-## 🔧 Critical: Cubism 4 Import
+Bind AI intelligence to visual characters
 
-**IMPORTANT:** You MUST import from the Cubism 4 build:
+Control expressions, motion, and behavior
 
-```typescript
-// ✅ CORRECT - Cubism 4
-import { Live2DModel } from 'pixi-live2d-display/cubism4';
+Route conversations through public AI APIs
 
-// ❌ WRONG - Cubism 2 only
-import { Live2DModel } from 'pixi-live2d-display';
-```
+Build interactive, voice-enabled experiences
 
-## 📦 Dependencies
+Test, prototype, and deploy living models
 
-- **Next.js 14** - React framework with App Router
-- **PixiJS 7** - 2D rendering engine
-- **pixi-live2d-display** - Live2D + PixiJS integration
-- **TypeScript** - Type safety
+This is not a demo.
+This is a studio.
+✨ Core Capabilities
+🎭 Model Intelligence
 
-## 🎨 Adding Your Own Model
+Attach AI brains to character models
 
-1. Place your Cubism 3/4 model files in `/public/live2d/aiva/`
-2. Your main file should be `.model3.json` format
-3. Update `/public/live2d/aiva/aiva.config.json`:
-   ```json
-   {
-     "modelUrl": "/live2d/aiva/YourModel.model3.json",
-     ...
-   }
-   ```
+Support for 2D, 3D, and experimental formats
 
-## 🔍 Finding Parameter & Part IDs
+Expression and state-driven behavior layers
 
-1. Navigate to http://localhost:3000
-2. Look for the "🔧 Debug IDs" panel
-3. Click to expand and see all available:
-   - **Parameters** - For sliders (ParamAngleX, ParamMouthSmile, etc.)
-   - **Parts** - For toggles (Part_Hair, Part_Outfit, etc.)
+🧠 AI Routing
 
-## ⚙️ Customization Config
+Public AI API routing
 
-Edit `/public/live2d/aiva/aiva.config.json`:
+Provider abstraction (BYOK-ready)
 
-```json
-{
-  "modelUrl": "/live2d/aiva/aiva.model3.json",
-  "defaultPreset": {
-    "params": {},
-    "parts": {}
-  },
-  "groups": [
-    {
-      "id": "outfit",
-      "label": "Outfit",
-      "type": "radioParts",
-      "options": [
-        {
-          "label": "Default",
-          "parts": { "Part_OutfitA": 1, "Part_OutfitB": 0 }
-        }
-      ]
-    }
-  ],
-  "sliders": [
-    {
-      "label": "Smile",
-      "paramId": "ParamMouthSmile",
-      "min": 0,
-      "max": 1,
-      "step": 0.01
-    }
-  ]
-}
-```
+Real-time response handling
 
-## 🎮 Mouse Tracking
+👀 Expressions & Motion
 
-Creates natural head movement by mapping cursor position to:
-- `ParamAngleX` - Horizontal head rotation
-- `ParamAngleY` - Vertical head rotation  
-- `ParamBodyAngleX` - Body tilt
-- `ParamEyeBallX` - Eye horizontal movement
-- `ParamEyeBallY` - Eye vertical movement
+Expression control systems
 
-## 💾 Preset System
+Idle behaviors & reactive movement
 
-- **Save**: Stores current parameter and part values to localStorage
-- **Load**: Restores previously saved configuration
-- **Reset**: Returns to default preset from config
+Motion capture integration (planned)
 
-Storage key: `aiva:preset`
+💬 Interaction
 
-## 🐛 Troubleshooting
+Embedded chat interfaces
 
-### Model Not Loading
+Voice-ready architecture (planned)
 
-1. Check console for errors
-2. Verify `/public/live2d/core/live2dcubismcore.min.js` exists
-3. Confirm model path in `aiva.config.json` is correct
-4. Ensure using Cubism 4 import: `pixi-live2d-display/cubism4`
+Model-driven responses, not static UI
 
-### Wrong Cubism Version Error
+🧪 Studio Environment
 
-```
-Could not find Cubism 2 runtime
-```
+Test models in real time
 
-This means you're using the wrong import. Change to:
-```typescript
-import { Live2DModel } from 'pixi-live2d-display/cubism4';
-```
+Iterate on behaviors and expressions
 
-### React Strict Mode Issues
+Safe playground for experimentation
 
-Disabled in `next.config.mjs` for Live2D compatibility:
-```javascript
-reactStrictMode: false
-```
+🧩 Use Cases
 
-## 📝 Tech Notes
+AI-powered VTubers & avatars
 
-- **Cubism Core**: Loaded from CDN as fallback, local file preferred
-- **Client-Only**: Live2D components use `'use client'` directive
-- **Canvas Rendering**: PixiJS Application manages rendering loop
-- **Parameter Updates**: Direct core model API for real-time changes
+Interactive NPCs & characters
 
-## 🎯 Next Steps
+AI companions & assistants
 
-Current implementation includes:
-- ✅ Model loading with Cubism 4
-- ✅ Mouse tracking
-- ✅ Basic customization
-- ✅ Preset system
-- ✅ Debug panel
+Visual frontends for LLMs
 
-Future enhancements:
-- Add chat integration
-- Voice synthesis (ElevenLabs)
-- Animation triggers
-- More polished UI
-- Idle animations
+Research & experimentation with embodied AI
+🛠️ Architecture Overview
+Model (2D / 3D / Hybrid)
+        ↓
+Expression & Motion Layer
+        ↓
+AI Routing Engine
+        ↓
+Public AI APIs
+        ↓
+Real-Time Interaction (Chat / Voice / Events)
+🚧 Roadmap (High-Level)
 
-## 📜 License
+ Advanced expression presets
 
-This project structure is MIT licensed. Live2D Cubism and model files have their own licenses.
+ Voice input/output
+
+ Scene-based model orchestration
+
+ Multiplayer / shared sessions
+
+ Plugin system for behaviors
+
+ Public SDK & API docs
+
+📄 Documentation
+
+Detailed documentation, concepts, and API references are being developed alongside the platform.
+
+Studio AIVA is built to scale from creators to studios.
+
+🌐 Project Links
+
+🧠 Project Twitter: https://x.com/Studio_AIVA
+
+👨‍💻 Developer: https://x.com/vegataweb3
+
+<div align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E6F7FF,100:87CEFA&height=140&section=footer" /> </div> ```
