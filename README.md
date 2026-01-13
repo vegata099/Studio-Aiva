@@ -1,154 +1,130 @@
 <div align="center">
 
-<!-- Optional cloud anime gif (public) -->
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWRkZGRkZGM5dGRpNTR6b2x2ZzY4bDV5ZHVwM3M5b3Z6eHd6aXN4biZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3o7btPCcdNniyf0ArS/giphy.gif" width="100%" />
+<img src="./avia%20logo.png" width="180" alt="Studio AIVA Logo" />
 
-<h1>☁️ Studio AIVA</h1>
+<h1>Studio AIVA</h1>
 
 <p>
-<b>Transform Models into Intelligent Experiences</b><br/>
-Professional-grade platform for bringing character models to life
+<b>Transform Models into Intelligent Experiences</b>
 </p>
 
 <p>
-2D · 3D · Experimental Models<br/>
-Expressions · AI Routing · Real-Time Interaction
+Professional-grade platform for integrating 2D and 3D character models with AI.<br/>
+Build interactive, expressive, real-time experiences powered by modern AI systems.
 </p>
 
 ---
 
 <a href="#">
-  <img src="https://img.shields.io/badge/Status-Active-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Active-87CEFA?style=for-the-badge" />
 </a>
 <a href="#">
-  <img src="https://img.shields.io/badge/Platform-Web-lightblue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Platform-Web-E6F7FF?style=for-the-badge" />
 </a>
 <a href="#">
-  <img src="https://img.shields.io/badge/Focus-Models%20×%20AI-white?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Category-AI%20×%20Models-white?style=for-the-badge" />
 </a>
 
 </div>
 
 ---
 
-```txt
-┌──────────────────────────────────────────────┐
-│               STUDIO  AIVA                   │
-├──────────────────────────────────────────────┤
-│  Models are no longer static assets.          │
-│                                              │
-│  They idle.                                  │
-│  They react.                                 │
-│  They speak.                                 │
-│  They think.                                 │
-│                                              │
-│  Studio AIVA turns character models into      │
-│  living, interactive AI-powered systems.     │
-└──────────────────────────────────────────────┘
-🌥️ What is Studio AIVA?
+## What is Studio AIVA?
 
-Studio AIVA is a professional platform for integrating 2D, 3D, and experimental character models with modern AI systems.
+**Studio AIVA** is a professional platform designed to bring character models to life.
 
-It enables creators and developers to:
+It bridges **visual models** and **artificial intelligence**, allowing creators and developers to build:
+- Interactive characters
+- AI-driven avatars
+- Expressive, reactive experiences
+- Real-time model-based interfaces
 
-Bind AI intelligence to visual characters
+Models are no longer static assets — they become **living systems**.
 
-Control expressions, motion, and behavior
+---
 
-Route conversations through public AI APIs
+## Core Capabilities
 
-Build interactive, voice-enabled experiences
+### Model Integration
+- Support for **2D, 3D, and experimental model formats**
+- Clean pipelines for importing and managing models
+- Studio-grade presentation and control
 
-Test, prototype, and deploy living models
+### Intelligence & AI Routing
+- Public AI API routing
+- Provider-agnostic architecture
+- Real-time AI responses bound directly to models
 
-This is not a demo.
-This is a studio.
-✨ Core Capabilities
-🎭 Model Intelligence
+### Expressions & Behavior
+- Expression control systems
+- Idle and reactive motion
+- Behavior layers that give models personality
 
-Attach AI brains to character models
+### Interaction
+- Embedded chat interfaces
+- Voice-ready architecture *(planned)*
+- Model-driven responses instead of static UI
 
-Support for 2D, 3D, and experimental formats
+### Studio Environment
+- Test and preview models in real time
+- Iterate on expressions, behaviors, and routing
+- Built for experimentation and production workflows
 
-Expression and state-driven behavior layers
+---
 
-🧠 AI Routing
+## Use Cases
 
-Public AI API routing
+- AI-powered avatars and VTubers  
+- Interactive NPCs and companions  
+- Visual frontends for LLMs  
+- Creative tools and AI experiments  
+- Research into embodied AI systems  
 
-Provider abstraction (BYOK-ready)
+---
 
-Real-time response handling
+## Architecture Overview
 
-👀 Expressions & Motion
+Studio AIVA follows a modular, creator-first architecture:
 
-Expression control systems
+- **Model Layer** — 2D / 3D / Hybrid characters  
+- **Expression Layer** — motion, state, emotion  
+- **AI Routing Layer** — public AI providers  
+- **Interaction Layer** — chat, events, (voice planned)  
 
-Idle behaviors & reactive movement
+Each layer is designed to be flexible, scalable, and non-destructive to the others.
 
-Motion capture integration (planned)
+---
 
-💬 Interaction
+## Roadmap (High-Level)
 
-Embedded chat interfaces
+- Advanced expression presets  
+- Voice input and output  
+- Scene-based model orchestration  
+- Multiplayer / shared sessions  
+- Plugin system for behaviors  
+- Public SDK and API documentation  
 
-Voice-ready architecture (planned)
+---
 
-Model-driven responses, not static UI
+## Documentation
 
-🧪 Studio Environment
+Comprehensive documentation is being developed alongside the platform, covering:
+- Core concepts
+- Studio workflows
+- AI routing
+- Best practices for building intelligent models
 
-Test models in real time
+---
 
-Iterate on behaviors and expressions
+## Project
 
-Safe playground for experimentation
+- Project: https://x.com/Studio_AIVA  
+- Developer: https://x.com/vegataweb3  
 
-🧩 Use Cases
+---
 
-AI-powered VTubers & avatars
+<div align="center">
 
-Interactive NPCs & characters
+<sub>Studio AIVA · Where models come to life</sub>
 
-AI companions & assistants
-
-Visual frontends for LLMs
-
-Research & experimentation with embodied AI
-🛠️ Architecture Overview
-Model (2D / 3D / Hybrid)
-        ↓
-Expression & Motion Layer
-        ↓
-AI Routing Engine
-        ↓
-Public AI APIs
-        ↓
-Real-Time Interaction (Chat / Voice / Events)
-🚧 Roadmap (High-Level)
-
- Advanced expression presets
-
- Voice input/output
-
- Scene-based model orchestration
-
- Multiplayer / shared sessions
-
- Plugin system for behaviors
-
- Public SDK & API docs
-
-📄 Documentation
-
-Detailed documentation, concepts, and API references are being developed alongside the platform.
-
-Studio AIVA is built to scale from creators to studios.
-
-🌐 Project Links
-
-🧠 Project Twitter: https://x.com/Studio_AIVA
-
-👨‍💻 Developer: https://x.com/vegataweb3
-
-<div align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E6F7FF,100:87CEFA&height=140&section=footer" /> </div> ```
+</div>
